@@ -1186,6 +1186,51 @@
           min-width: 120px;
         }
       }
+
+            /* ===== CREDITS BAR ===== */
+      .credits-bar {
+        width: 100%;
+        padding: 12px 64px;
+        background: rgba(0, 0, 0, 0.4);
+        border-top: 1px solid rgba(79, 111, 212, 0.08);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .credits-bar p {
+        font-size: 0.7rem;
+        color: rgba(122, 133, 163, 0.5);
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+      .credits-link {
+        text-decoration: none;
+        color: rgba(122, 133, 163, 0.5);
+        transition: all 0.3s ease;
+        margin-left: 4px;
+      }
+      .credits-link span {
+        background: var(--gradient-alt);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-weight: 700;
+        opacity: 0.6;
+        transition: opacity 0.3s;
+      }
+      .credits-link:hover span {
+        opacity: 1;
+      }
+      .credits-link:hover {
+        color: var(--gray);
+      }
+
+      @media (max-width: 960px) {
+        .credits-bar {
+          padding: 12px 28px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -1546,7 +1591,7 @@
               <div class="projeto-thumb-bg"
                 style="background:linear-gradient(135deg,#28397f 0%,#3a52a8 100%);"></div>
               <video class="thumb-preview"
-                src="WL/1 WL.mp4#t=0.5"
+                src="1 WL.mp4#t=0.5"
                 muted playsinline preload="metadata"
                 onmouseenter="this.play()"
                 onmouseleave="this.pause();this.currentTime=0.5;">
@@ -1565,7 +1610,7 @@
               <div class="projeto-thumb-bg"
                 style="background:linear-gradient(135deg,#0d1120 0%,#28397f 100%);"></div>
               <video class="thumb-preview"
-                src="WL/2 WL.mp4#t=0.5"
+                src="2 WL.mp4#t=0.5"
                 muted playsinline preload="metadata"
                 onmouseenter="this.play()"
                 onmouseleave="this.pause();this.currentTime=0.5;">
@@ -1622,7 +1667,7 @@
               <div class="projeto-thumb-bg"
                 style="background:linear-gradient(135deg,#28397f 0%,#7b9ff5 100%);"></div>
               <video class="thumb-preview"
-                src="WL/5 WL.mp4#t=0.5"
+                src="5 WL.mp4#t=0.5"
                 muted playsinline preload="metadata"
                 onmouseenter="this.play()"
                 onmouseleave="this.pause();this.currentTime=0.5;">
@@ -1740,7 +1785,7 @@
       </div>
     </section>
 
-    <!-- FOOTER -->
+        <!-- FOOTER -->
     <footer>
       <p>
         © 2026 <span>Jorge Petrovitch</span> — Editor de Vídeo & UGC Creator.
@@ -1748,6 +1793,16 @@
       </p>
       <p>Feito com <span>♥</span> e foco em <span>conversão</span> ⚡</p>
     </footer>
+
+    <!-- CRÉDITOS -->
+    <div class="credits-bar">
+      <p>
+        Desenvolvido por
+        <a href="#" class="credits-link" target="_blank">
+          <span>Rotta</span> Design
+        </a>
+      </p>
+    </div>
 
     <script>
       // ===== CURSOR =====
